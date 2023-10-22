@@ -17,3 +17,5 @@ To run the client-side follow these steps
 
 3-run $npm start 
 
+4- you will need to run $env:NODE_OPTIONS = "--openssl-legacy-provider"  if you have node options problem and then run $npm start
+
