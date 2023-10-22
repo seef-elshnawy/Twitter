@@ -1,5 +1,6 @@
 # Twitter
 To run  server-side follow these steps 
+
 1-open twitter folder
 
 2-run $npm i
@@ -9,6 +10,9 @@ To run  server-side follow these steps
 4-run $npm run start:dev to start your development server
 
 To run the client-side follow these steps
+
 1-open twiter_front
+
 2-run $npm i
+
 3-run $npm start 
