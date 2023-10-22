@@ -1,0 +1,81 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User{
+id Int @id @default(autoincrement())
+firstname String 
+lastname String
+fullname String
+email String @unique
+nickname String @unique
+password String
+img Bytes?
+tweets Tweets[] 
+comments Comments[]
+Responses Responses[] @relation(name: "user")
+ResponseTarget Responses[] @relation(name: "target")
+followers Follwers[]
+followings Followings[]
+}
+
+model Tweets{
+id Int @id @default(autoincrement())
+image Bytes?
+post_text String? @db.VarChar(200)
+createdAt DateTime @default(now())
+updatedAt DateTime @updatedAt 
+userId Int
+user User @relation(fields: [userId], references: [id]) 
+comments Comments[]
+responses Responses[]
+}
+
+model Comments{
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  comment_text String
+  userCreateId Int
+  user User @relation(fields: [userCreateId],references: [id]) 
+  tweetId Int
+  tweet Tweets @relation(fields: [tweetId], references: [id])
+  Responses Responses[]
+
+}
+model Responses{
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  comment_text String
+  target String
+  userCreateId Int
+  user User @relation(fields: [userCreateId],references: [id], name: "user") 
+  targetUser User @relation(fields: [target],references: [nickname],name:"target") 
+  commentId Int
+  comment Comments @relation(fields: [commentId], references: [id])
+  tweetId Int
+  tweet Tweets @relation(fields: [tweetId], references: [id])
+}
+
+model Follwers{
+  id Int @id @default(autoincrement())
+  uid Int 
+  followingId Int
+  user User @relation(fields: [uid],references: [id])
+}
+
+model Followings{
+  id Int @id @default(autoincrement())
+  uid Int 
+  followerId Int
+  user User @relation(fields: [uid],references: [id])
+}

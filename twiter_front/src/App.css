@@ -1,0 +1,718 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* start signup page */
+.signUp{
+margin-top: 50px;
+}
+.fields_signup, .password_signUp{
+  width: 400px;
+  margin-left: 35%;
+}
+
+.btn_signUp{
+  background-color:rgb(29, 155, 240);
+  border-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;  
+  width: 250px;
+  height: 50px;
+  color: white;
+  margin-right: 30px;
+
+}
+.btn_signUp:hover{
+  background-color: rgb(26, 140, 216);
+  transition: 100ms;
+}
+.img_signUp{
+  margin-top: 100px;
+}
+.img_signUp_jpg{
+  width: 150px;
+
+}
+.loading{
+  margin-left: 47.5%;
+  margin-top: 10%;
+}
+/* end signup page */
+
+/* start  left sidebar*/
+.sidebar{
+  float: left;
+  margin-left: 0%;
+  border-right: solid 1px whitesmoke;
+  width: 400px;
+  height: 740px;
+  position: fixed;
+}
+.img_sidebar{
+margin-top: 15px;
+margin-right: 155px;
+}
+.img_profile_jpg{
+width: 50px;
+cursor: pointer;
+}
+.img_profile_jpg:hover{
+  background-color:whitesmoke;
+
+}
+
+.flex_profile_sidebar{
+  display: flex;
+  flex-direction:row;
+  height: 50px;
+  border-radius: 30%;
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 170px;
+}
+.flex_profile_sidebar:hover{
+  background-color:whitesmoke;
+}
+
+.img_Sidebar_jpg{
+  width: 27px;
+  height: 27px;
+  margin: 2px;
+}
+.img_Sidebar_jpg_option{
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  margin-top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.img_Sidebar_jpg_option:hover{
+  background-color:whitesmoke;
+
+}
+
+.text_Sidebar{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  color: black;
+  text-align: center;
+}
+.profile_inf{
+  margin-top: 150px;
+  height: 70px;
+  margin-left: 90px;
+  width: 309px;
+  display: flex;
+  cursor: pointer;
+  border-radius: 20%;
+  
+}
+.profile_inf:hover{
+  background-color:whitesmoke;
+
+}
+.profile_pic{
+  border-radius: 60%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 10px;
+  background-color:deeppink;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  font-size: large;
+}
+
+.profile_name{
+  margin-left: 5px;
+  height: 30px;
+  width: 300px;
+  text-align: left;
+}
+.profile_nickname{
+ padding-top: 0px; 
+ padding-right: 40px;
+color: gray;
+
+}
+.hiden_field{
+  cursor: pointer;
+  padding-top: 0px;
+  margin-left: 300px;
+  width: 100px;
+  border-radius: 25%;
+}
+.hiden_field:hover{
+font-weight: bold;
+}
+/* end left sidebar */
+
+/*start right sidebar */
+.main{
+display: flex;
+
+}
+.sidebar_right{
+  border-left: 1px solid whitesmoke;
+  padding: 10px;
+  position: fixed;
+  margin-left: 1070px;
+  width: 400px;
+}
+
+
+.search_input{
+  background-color: whitesmoke;
+  border-radius: 50px;
+  margin-top: 50px;
+  border: none;
+}
+.search_img{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  
+}
+.search_img_field{
+  border: none;
+  margin-top: 50px;
+  border-radius: 50px;
+  background-color: whitesmoke;  
+}
+.results{
+  overflow-y: scroll;
+  margin-top: 30px;
+  height: 300px;
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+.element{
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+}
+.element:hover{
+  background-color: whitesmoke;  
+
+}
+.profile_name_element{
+  margin-left: 60px;
+  margin-top: 30px;
+  position:absolute;
+}
+.profile_nickname_element{
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.profile_pic_element{
+  border-radius: 60%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  float: left;
+  margin-top: 10%;
+  margin-left: 10px;
+  background-color:deeppink;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  font-size: large;
+}
+/*end right sidebar */
+
+/* start main page*/
+.center_page{
+  border: 1px solid whitesmoke;
+  padding-right: 0px;
+  margin-left: 410px;
+  max-width: 650px;
+  margin-top: 50px;
+}
+.main_page{
+}
+.title{
+  padding-left: 0px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+.tweet_input .field{
+  width: 700px;
+  height: 90px;
+  margin: 0px;
+  padding-left: 100px;
+}
+.img_input{
+  border-radius: 60%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  margin-top: -5%;
+  margin-left: 10px;
+  background-color:deeppink;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  font-size: large;
+  position: absolute;
+}
+.txt_input{
+  margin-top: -4%;
+  position: absolute;
+  margin-left: 60px;
+  color:rgb(160, 160, 160);
+ font-size: medium;
+ font-weight: 600;
+}
+.btn_input{
+  margin-left: 550px;
+  margin-top: 20px;
+ 
+}
+.btn_input button{
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  width: 60px;
+  background-color:rgb(29, 155, 240);
+  color: white;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+}
+.btn_input_disabled{
+  margin-left: 550px;
+  margin-top: 20px;
+}
+.btn_input_disabled button{
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  width: 60px;
+  background-color:rgb(121, 201, 255);
+  color:white;
+  border: none;
+  height: 40px;
+}
+.tweets{
+  margin-top: 40px;
+  min-height: 400px;
+  max-height: max-content;
+}
+.container{
+  border:solid 1px whitesmoke;
+  min-height: 110px;
+  height: auto;
+  max-height:400px;
+  display: flex;
+  position:relative;
+  margin-top:5px;
+  text-decoration: none;
+}
+.container:hover{
+  background-color: whitesmoke;
+}
+.img_container{
+  border-radius: 60%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  margin-top: -5%;
+  margin-left: 10px;
+  padding: 5px;
+  background-color:deeppink;
+  color: white;
+  text-align: center;
+  margin-top: 7px;
+  font-size: large;
+  position: absolute;
+}
+.auth_deatails{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 55px;
+
+
+}
+.auth_deatails_nickname{
+  margin-top: 20px;
+  margin-right: 10px;
+  position: absolute;
+  color: gray;
+}
+
+.auth_deatails_name{
+color: black;
+}
+.date_container{
+  margin-left: 270px;
+  font-size: 13px;
+  color: gray;
+  text-decoration: none;
+}
+.post_container{
+  margin-top: 25px;
+  margin-left: 60px;
+  position: absolute;
+ 
+}
+.text_post_container{
+  word-wrap: break-word;
+  margin-top: 20px;
+  color: black;
+}
+.text_post_comment{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+.text_post_comment img{
+  width: 27px;
+  height: 27px;
+  margin-top: 60px;
+}
+.text_post_comment p{
+  position: absolute;
+  margin-top: 64px;
+  margin-left: 30px;
+  font-size: 15px;
+  color: gray;
+}
+/*end main page*/
+
+/*start profile page*/
+.profile_info {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px whitesmoke;
+  height: 70px;
+  margin-top: -50px;
+  text-align: left;
+  padding: 10px;
+  padding-left: 60px;
+}
+.profile_info .text_profile_info{
+  margin-left: 20px;
+  font-weight:700;
+  font-size: 19px;
+
+}
+.profile_info img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-left: -50px;
+  cursor: pointer;
+  border-radius: 60%;
+}
+.profile_info img:hover{
+background-color:rgb(218, 217, 217);
+transition: 200ms ease;
+}
+.tweets_profile_info{
+  margin-top: 30px;
+  margin-right: 200px;
+  position: absolute;
+  color: gray;
+  font-size: 13px;
+}
+.profile_container{
+  border: solid 1px black;
+  height: 450px;
+  margin-top: 0px;
+  width: 600px;
+}
+.profile_container_img_big{
+  background-color: rgb(77, 14, 141);
+  height: 200px;
+}
+.profile_container_img_small{
+  border-radius: 60%;
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  align-items: center;
+  margin-left: 10px;
+  padding: 5px;
+  background-color:deeppink;
+  color: white;
+  text-align: center;
+  margin-top: -55px;
+  font-size: large;
+  position: absolute;
+}
+.profile_container_img_small p{
+  padding-top: 15px;
+  font-size: 35px;
+}
+.text_profile_info_main{
+  position: absolute;
+  padding-top: 50px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.text_profile_info_main_nickname{
+  position: absolute;
+  padding-top: 80px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+.porfile_container_follow{
+  margin-top: 150px;
+  display: flex;
+}
+.following{
+  padding-left: 15px;
+  color: gray;
+  cursor: pointer;
+}
+.following:hover{
+  text-decoration:underline;
+}
+.followers{
+  padding-left: 30px;
+  color: gray;
+  cursor: pointer;
+}
+.followers:hover{
+  text-decoration:underline;
+}
+.profile_container_follow{
+}
+.profile_container_follow button{
+  margin-left: 160px;
+  margin-top: -170px;
+  position: absolute;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  width: 120px;
+  background-color:black;
+  color:white;
+  border: none;
+  height: 40px;
+}
+.profile_container_follow button:hover{
+  background-color:rgb(32, 32, 32);
+
+}
+.profile_info ,.follow{
+  width: 660px;
+  height: auto;
+}
+.follow img{
+  position: absolute;
+  margin-left: -50px;
+}
+.follow .text_profile_info{
+  text-align: left;
+  position: absolute;
+  left:450px;
+}
+.follow_navbar{
+  padding-top: 50px;
+  float: left;
+  margin-left: -50px;
+  color: gray;
+}
+.follow_navbar_link{
+  color: gray;
+  cursor: pointer;
+}
+.follow_navbar_link:hover{
+  background-color: whitesmoke;
+  color: grey;
+}
+.active_underline{
+  background-color:#61dafb;
+  position: absolute;
+  height: 5px;
+  width: 80px;
+  margin-left: -39px; 
+}
+.img_follow{
+background-color: red;
+margin-top: 30px;
+}
+.follow_loading{
+  position: absolute;
+  margin-left: 290px;
+}
+/*end profile page*/
+
+/*start tweet page*/
+.tweet_container{
+width: 670px;
+right: 10px;
+}
+.tweet_container:hover{
+  background-color: white;
+}
+.tweet_loading{
+  left: 400px;
+}
+.text_profile_info_tweet{
+  right: 410px;
+  position: absolute;
+  width: 670px;
+  border: none;
+}
+.comment_tweet{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  
+}
+.comment_tweet_reply{
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 30px;
+  color: gray;
+}
+.comment_tweet_input{
+  width: 670px;
+  height: 100px;
+  padding-left: 58px;
+  padding-bottom: 25px;
+  border: none;
+}
+.comment_tweet_input_reply{
+  position: absolute;
+  margin-left: 60px;
+} 
+.comment_tweet_btn{
+  margin-top: 50px;
+  position: absolute;
+  margin-left: 580px;
+}
+.comment_tweet_btn_active{
+  margin-top: 50px;
+  position: absolute;
+  margin-left: 580px;
+}
+.comment_tweet_btn button{
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  width: 60px;
+  background-color:rgb(121, 201, 255);
+  color:white;
+  border: none;
+  height: 40px;
+}
+.comment_tweet_btn_active button{
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  width: 60px;
+  background-color:rgb(29, 155, 240);
+  color: white;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+}
+.auth_deatails_nickname_tweet{
+  position: absolute;
+  left: 100px;
+  color: gray;
+}
+.text_post_container_tweet{
+  margin-top: -0px;
+  color: black;
+}
+
+
+.text_post_comment_tweet{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+.text_post_comment_tweet img{
+  width: 27px;
+  height: 27px;
+  margin-top: 0px;
+}
+.text_post_comment_tweet p{
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 30px;
+  font-size: 15px;
+  color: gray;
+}
+.tweet_container_reply:hover{
+background-color: whitesmoke;
+transition: 200ms ease-in;
+}
+.tweet_container_reply{
+  cursor: pointer;
+}
+.auth_deatails_reply{
+  padding-top: 20px;
+  position: absolute;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+.auth_deatails_reply span{
+  margin-top: 0px;
+  padding-left: 2px;
+  position: absolute;
+}
+.text_post_container_comment{
+  margin-top: 20px;
+}
+/*end tweet page*/
